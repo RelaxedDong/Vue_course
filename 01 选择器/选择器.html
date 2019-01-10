@@ -6,17 +6,15 @@
     <script src="../vue.js"></script>
 </head>
 <body>
-
-
-MVVM模型：
-M：模型，机器可读性强的额数据，例如数组，对象等等
-V：视图，人眼可读性强的数据，例如下拉框，弹层等等
-VM：视图模型，双向绑定，将模型中的数据与视图中的数据绑定在一起
-MVVM模式可以极大的简化我们开发的工作量
-
-
-
-<div id="app">
+<!--MVVM模型：-->
+<!--M：模型，机器可读性强的额数据，例如数组，对象等等-->
+<!--V：视图，人眼可读性强的数据，例如下拉框，弹层等等-->
+<!--VM：视图模型，双向绑定，将模型中的数据与视图中的数据绑定在一起-->
+<!--MVVM模式可以极大的简化我们开发的工作量-->
+<div class="app">
+    [[msg]]
+</div>
+<div class="app">
     [[msg]]
 </div>
 <script>
@@ -29,16 +27,21 @@ MVVM模式可以极大的简化我们开发的工作量
      // 得到vue实例化对象
             //    $el属性：视图容器元素
             // 定义data属性中的每个属性会添加到vue实例对象中
-    var app = new Vue({
-        'el':'#app',
+    var app1 = new Vue({
+        'el':'.app',
         data:data,
         delimiters:['[[',']]']
     })
-    console.log(app)
     data.msg = '哈哈哈'
     // var delimiters = ['{{','}}'];
     // var unsafeDelimiters = ['{{{','}}}']
-
+    var app2 = new Vue({
+        'el':'.app',
+        data:{
+            'msg':'666'
+        },
+        delimiters:['[[',']]']
+    })
 </script>
 </body>
 </html>
@@ -50,3 +53,6 @@ MVVM模式可以极大的简化我们开发的工作量
     <!--3. 类选择器-->
     <!--4. 自定义选择器:-->
     <!--mydiv-->
+
+<!--el匹配到多个元素，只实例第一个-->
+<!--一个实例只能实例一个dom元素-->
