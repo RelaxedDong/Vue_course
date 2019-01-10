@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div class="app">
+    [[msg]]
+</div>
+<script>
+    var data = {
+        'msg':'donghao',
+        obj:{
+            color:'red'
+        }
+    }
+    // console.log(data)
+    var app1 = new Vue({
+        'el':'.app',
+        data:data,
+        delimiters:['[[',']]']
+    })
+
+    // #查看属性值是否相等
+    // app1.msg = 'hahaha'绑定值得修改
+    // data.msg = '555555'绑定值得修改
+    console.log(app1.obj === data.obj)
+
+    //模型在实例化对象上的绑定，模型的数据传到视图的数据单向的
+
+</script>
+</body>
+</html>
