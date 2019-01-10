@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+
+
+MVVM模型：
+M：模型，机器可读性强的额数据，例如数组，对象等等
+V：视图，人眼可读性强的数据，例如下拉框，弹层等等
+VM：视图模型，双向绑定，将模型中的数据与视图中的数据绑定在一起
+MVVM模式可以极大的简化我们开发的工作量
+
+
+
+<div id="app">
+    [[msg]]
+</div>
+<script>
+    var data = {
+        'msg':'donghao'
+    }
+    // 在VUE中，通过创建一个vue实例，这个对象就相当于一个VM对象
+        // 通过el属性来绑定一个视图容器
+        // 通过data熟悉来绑定视图数据
+     // 得到vue实例化对象
+            //    $el属性：视图容器元素
+            // 定义data属性中的每个属性会添加到vue实例对象中
+    var app = new Vue({
+        'el':'#app',
+        data:data,
+        delimiters:['[[',']]']
+    })
+    console.log(app)
+    data.msg = '哈哈哈'
+    // var delimiters = ['{{','}}'];
+    // var unsafeDelimiters = ['{{{','}}}']
+
+</script>
+</body>
+</html>
+
+
+<!--常见选择器：-->
+    <!--1. 'div'  元素名选择器-->
+    <!--2. id选择器-->
+    <!--3. 类选择器-->
+    <!--4. 自定义选择器:-->
+    <!--mydiv-->
