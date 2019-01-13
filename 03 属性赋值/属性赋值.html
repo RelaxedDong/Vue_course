@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div :data-id="id" :style="{background:background,color:color}" :title="title">
+        123
+    </div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+        id:10,
+        background:'green',
+        color:'white',
+        content:'内容',
+        title:'我是标题'
+    }
+    var app = new Vue({
+        el:'div',
+        data:data
+    })
+</script>
+</body>
+</html>

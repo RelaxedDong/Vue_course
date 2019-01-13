@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>{{size}}</div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+        width:200,
+        height:300
+    }
+    var app = new Vue({
+        el:'div',
+        data:data,
+        // 1.
+        // computed:{
+        //     size:function () {
+        //         console.log(this)
+        //         console.log(arguments)
+        //         return this.width*this.height
+        //     }
+        // }
+        // 2.
+        computed:{
+            size:function (v) {
+                // #参数也是vue实例化对象
+                console.log(v)
+                return v.width*v.height
+            }
+        }
+    })
+</script>
+</body>
+</html>
+<!--动态函数定义在computed属性中，属性是一个对象-->
+<!--参数有一个vue实例化对象-->
+<!--作用域是vue实例化对象-->

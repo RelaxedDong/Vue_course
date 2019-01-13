@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="msg">
+    <!--要显示input中的内容-->
+    <h1>{{msg}}</h1>
+</div>
+<script src="../vue.js"></script>
+<!--jquery方式-->
+<!--<script>-->
+<!--$('input').on('keyup',function (e) {-->
+    <!--// 获取input元素-->
+    <!--// 1.-->
+    <!--// var val = e.target.value-->
+    <!--// 2.-->
+    <!--var val = $(this).val()-->
+    <!--$('h1').html(val)-->
+<!--})-->
+<!--</script>-->
+
+<!--vue方式-->
+<script>
+    var app = new Vue({
+        el:'div',
+        data:{
+            'msg':'donghao'
+        }
+    })
+</script>
+</body>
+</html>
+<!--'''使用v-model实现视图到模型的绑定-->
+<!--数据被更新会被vue监听，然后渲染到视图-->

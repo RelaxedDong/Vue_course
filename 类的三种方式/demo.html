@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .red{color: red}
+        .green{color: green}
+        .blue{color: blue}
+        .peru{color: peru}
+        .bg-yellow{background: yellow}
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 :class="cls1">哈哈哈</h1>
+    <h2 v-bind:class="[red ,green,'bg-yellow']">哈哈哈</h2>
+    <h2  v-bind:class="[red ,green]" :class="bg_yellow">哈哈哈</h2>#混合使用 v-bind:class无效
+
+    <h3 v-bind:class="{red:true,'bg-yellow':true}">哈哈哈</h3> #直接对应style
+    <h3 v-bind:class="{red:true,'bg-yellow':bGyellow}">哈哈哈</h3> #直接对应style
+</div>
+<script src="../vue.js"></script>
+
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            // #1.通过插值方式绑定
+            cls1:'red bg-yellow',
+            // #2.通过v-bind指令，属性值是一个数组 v-bind:class='[]'
+            // #这是一个js环境，所以每个成员是变量，一旦加上引号，就将变量转换成字符串了
+            red:'red',
+            green:'green',
+            bg_yellow:'bg-yellow',
+            // #3.v-bind:class='{}',也是一个js环境// {}代表对象
+            // 属性值只能是布尔值
+            // true:保留类名，False表示删除这个类名
+            bGyellow:false
+
+        }
+    })
+</script>
+</body>
+</html>
+

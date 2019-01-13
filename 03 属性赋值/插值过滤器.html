@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <span>{{money | currency}}
+        {{ msg|capitalize }}
+    </span>
+</div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+       money:200,
+       msg:'good day'
+    }
+    var app = new Vue({
+        el:'div',
+        data:data,
+        filters: {
+            capitalize: function (value) {
+                if (!value) return ''
+                value = value.toString()
+                return value.charAt(0).toUpperCase() + value.slice(1)
+            },
+            currency:function (value) {
+                return '$'+value
+            }
+        }
+    })
+
+</script>
+
+</body>
+</html>
+
+<!--vue中对插入的数据进行处理-->
+<!--插值变大是，让我们插入数据的形式更复杂-->
+<!--使用表达式不能复用-->
+
+<!--语法：-->
+<!--过滤器 | 过滤器名称-->

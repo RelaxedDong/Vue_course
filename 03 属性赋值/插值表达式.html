@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><span>{{content.toUpperCase()}}</span>
+面积：<span v-once>{{height*width}}</span>
+
+</div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+        content:'abc',
+        height:200,
+        width:100
+    }
+    var app = new Vue({
+        el:'div',
+        data:data
+    })
+
+
+</script>
+</body>
+</html>
+<!--变量，运算符，方法等等-->
+<!--使用单次插值语法，避免html编译语法-->

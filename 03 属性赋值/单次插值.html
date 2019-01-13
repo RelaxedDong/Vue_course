@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--一些数据一旦被渲染，就不要再修改了，插入一次数据-->
+    <!--#语法：v-once-->
+    <!--不仅适用于内容区域，还可以在元素属性中-->
+</head>
+<body>
+<div><span v-once>{{content}}</span></div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+        content:'内容'
+    }
+    var app = new Vue({
+        el:'div',
+        data:data
+    })
+    app.content = '123'
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        b{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div><span v-html="content"></span></div>
+<script src="../vue.js"></script>
+<script>
+    var data = {
+        content:'<b style="color: red">哈哈</b>'
+    }
+    var app = new Vue({
+        el:'div',
+        data:data
+    })
+</script>
+</body>
+</html>
