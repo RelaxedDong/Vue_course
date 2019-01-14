@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--1.第一种方式：插入全面样式字符串   替换部分样式字符串-->
+<!--<div id="app" :style="styles">-->
+    <!--ketang-->
+<!--</div>-->
+
+<!--<div id="app" :style="{background:background}">-->
+    <!--123123-->
+<!--</div>-->
+<!--2.通过v-bind:style='[]'-->
+
+<!--<div id="app" v-bind:style="[font,{border:'10px solid black'}]">-->
+    <!--sladjfla-->
+<!--</div>-->
+
+<!--&lt;!&ndash;3.动态绑定&ndash;&gt;  与b-vind:style='[]'只保留 :style='{}'-->
+<div id="app" :style="{color:'red',fontSize:fz}">
+    hahahhah黑暗神殿
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            styles:'color:blue;font-size:40px',
+
+            // #style对象
+            font:{
+                'background-color': 'yellow',
+                 color:'white',
+            },
+            fz:'50px'
+        }
+    })
+</script>
+</body>
+</html>
+
+<!--1.插值方式，插入到style属性中，是行内样式-->

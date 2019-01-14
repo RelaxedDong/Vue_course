@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #app{
+            float: left;
+            margin: 30px;
+            font-size: 12px;
+            text-align: center;
+        }
+        span{
+            display: inline-block;
+            height: 40px;
+            width: 80px;
+            line-height: 40px;
+            background: aquamarine;
+        }
+        li{
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid orange;
+            width: 100px;
+        }
+        ul{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <span>博客</span>
+    <!--1.方式-->
+    <!--<ul :class="cls">-->
+    <!--2.方式-->
+    <!--<ul  v-bind:class="[cls]">-->
+    <!--3.方式-->
+    <ul v-bind:class="{show:cls}">
+        <li>博客评论</li>
+        <li>未读提醒</li>
+    </ul>
+</div>
+
+
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            cls:false
+        }
+    })
+    // #绑定事件
+    document.getElementById('app').onmouseenter = function () {
+        app.cls = true;
+    }
+    document.getElementById('app').onmouseleave = function () {
+        app.cls = false;
+    }
+</script>
+</body>
+</html>
+
