@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #app{
+            width: 600px;
+            margin: 100px auto;
+
+        }
+        .title{
+            display: block;
+            float: left;
+            width: 100px;
+        }
+        .container{
+            float: left;
+            margin-left: 100px;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        .item{
+            overflow: hidden;
+            height: 50px;
+        }
+        .container span{
+            border: 1px solid #cccccc;
+            padding: 10px;
+        }
+        .container img{
+            border: 3px dashed #ccc;
+        }
+        .disabled-img{
+            cursor: not-allowed;
+            border: 1px solid red;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+<!--div#app>(div>span.title{尺码}+div.container>span{$@38}*4)+div>span.title{颜色分类}+div.container>img[src=$.jpg]*2-->
+<div id="app">
+    <div class="item"><span class="title">尺码</span>
+        <div class="container" id="size">
+            <span v-bind:style="{border:span[0]}">38</span>
+            <span v-bind:style="{border:span[1]}">39</span>
+            <span v-bind:style="{border:span[2]}">40</span>
+            <span v-bind:style="{border:span[3]}">41</span>
+        </div>
+    </div>
+    <div><span class="title">颜色分类</span>
+        <div class="container">
+            <img :class="[img[0]]" src="1.jpg" alt="">
+            <img :class="[img[1]]" src="2.jpg" alt="">
+        </div>
+    </div>
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            span:[],
+            img:[]
+        }
+    })
+    //获取所有的span  绑定事件
+    var spans = document.getElementById('size').getElementsByTagName('span')
+    // #为第一个span绑定事件
+    spans[0].onclick = function () {
+        // #第一个span变红
+        var myspan = [];
+        myspan[0] = '1px solid red'
+        app.span = myspan;
+        // #第二个img不能点击
+        var img = []
+        img[1] = 'disabled-img'
+        app.img = img;
+    }
+
+    spans[1].onclick = function () {
+        // #第二个span变红
+        var myspan = [];
+        myspan[1] = '1px solid red'
+        app.span = myspan;
+        // #所有图片都能点击
+        app.img = []
+    }
+
+</script>
+</body>
+</html>

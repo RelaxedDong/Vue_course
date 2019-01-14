@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="book in books">{{book}}</li>
+    </ul>
+
+    <ul>
+        <li v-for="people in obj">
+            {{people.name}}-{{people.age}}<span v-if="people.desc">{{people.desc}}</span>
+        </li>
+    </ul>
+    <!--#循环一个对象-->
+
+    <ul>
+        <li v-for="p in Tom">
+            {{p}}
+        </li>
+    </ul>
+    <!--#键值对-->
+    <!--你也可以提供第二个的参数为键名：-->
+    <ul>
+        <li v-for="(key,value) in Tom">
+            {{key}}-{{value}}
+        </li>
+    </ul>
+    <!--第三个参数为索引：-->
+    <ul>
+        <li v-for="(key,value,index) in Tom">
+            {{key}}-{{value}}={{index}}
+        </li>
+    </ul>
+
+<!--#v-for添加到template元素上，将动态添加一组元素-->
+    <template v-for="value in books">
+        <li>
+            <span>{{value}}</span>
+        </li>
+    </template>
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            books:['1','2','3','4'],
+            obj:[
+                {name:'donghao',age:20,desc:''},
+                {name:'tanyajuan',age:19,desc:'哈哈'}
+            ],
+            Tom:{
+                firstname:'h',
+                lastname:'t',
+                age:20,
+                mother:'l'
+            }
+        }
+    })
+</script>
+</body>
+</html>
