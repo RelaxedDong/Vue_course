@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #app{
+        width: 800px;
+        height: 500px;
+        margin: 100px auto;
+        box-shadow: 1px 2px #cccccc;
+    }
+</style>
+<body>
+<div id="app">
+    <label for="login">邮箱</label>
+    <input id="login" type="text" v-model="msg">
+    <ul v-if='msg'>
+        <li v-for="item in mail">
+            {{delMsg}}@{{item}}.com
+        </li>
+    </ul>
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            msg:'',
+            mail:['qq','163','126','sina','hotmail','189']
+        },
+        //动态绑定数据
+        computed:{
+            delMsg:function () {
+                //获取@地址
+                var num = this.msg.indexOf('@');
+                console.log(num)
+                console.log('长度'+this.msg.length);
+                num = num<0?this.msg.length:num;
+                //处理msg,截取@前面的字符串
+                return this.msg.slice(0,num)
+
+            }
+        }
+    })
+</script>
+</body>
+</html>
