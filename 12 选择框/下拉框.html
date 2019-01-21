@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <select v-model="mail" multiple>
+        <option value="1234">@1234</option>
+        <option value="12345">@12345</option>
+        <option value="123456">@123456</option>
+        <option value="1234567">@1234567</option>
+    </select>
+    {{mail}}
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new  Vue({
+        el:'#app',
+        data:{
+            mail:['123456','1234']
+        }
+    })
+</script>
+</body>
+</html>

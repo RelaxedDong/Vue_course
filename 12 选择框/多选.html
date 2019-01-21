@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <label for="L">L</label><input type="checkbox" name="" id="L" v-model="size.L">
+    <label for="M">M</label><input type="checkbox" name="" id="M" v-model="size.M">
+    <label for="XL">XL</label><input type="checkbox" name="" id="XL" v-model="size.XL">
+    <label for="mail">包邮</label><input type="checkbox"  v-bind:true-value="'包邮'" v-bind:false-value="notFree"   name="" id="mail" v-model="size.mail">
+    {{ size }}
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            notFree:'不包邮',
+            size:{
+                L:true,//选中
+                M:false,//不选中表示未选中的值 undifined 0 null NaN ''  等
+                Xl:false,
+            }
+        }
+    })
+</script>
+</body>
+</html>

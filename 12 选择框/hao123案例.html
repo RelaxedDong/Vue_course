@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <select v-model="mail">
+        <option v-for="item in list" v-bind:value="item">
+            @{{item}}
+            <template v-if="item !='yeah'">.com</template>
+            <template v-if="item =='yeah'">.net</template>
+        </option>
+    </select>
+    {{ mail }}
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new  Vue({
+        el:'#app',
+        data:{
+            list:['163','126','sina','139','yeah'],
+            mail:''
+        }
+    })
+</script>
+</body>
+</html>
