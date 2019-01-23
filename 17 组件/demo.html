@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--逐渐是一组可被复用的，具有一定功能，独立的完整的代码片段，这个代码片段可以渲染一个完整的视图结构的组件开发-->
+<!--步骤-->
+<!--注册一个全局组件语法格式如下：-->
+
+<!--Vue.component(tagName, options)-->
+<!--tagName 为组件名，options 为配置选项。注册后，我们可以使用以下方式来调用组件：-->
+
+<!--<tagName></tagName>-->
+<!--1.使用这个组件（html中的一个自定义元素）-->
+<!--2.在js中顶定义组件，通过vue.extend()-->
+<!--extend方法接收一个对象，这个对象是一个描述组件-->
+<!--具有vue实例化的属性方法-->
+<!--vue组件是一个独立的个体，数据方法等等，要绑定到组件内部-->
+<!--3.注册组件-->
+<div id="app">
+    <button v-on:click="incrementTotal"></button>
+    <input type="text" v-model="inp">
+    <!--1.在页面中使用组件-->
+    <my-abc msg="123" v-bind:nsp="inp"  v-on:increment="incrementTotal"></my-abc>
+</div>
+<script src="../vue.js"></script>
+<script>
+    // 2.定义组件
+    var MyAbc = Vue.extend({
+        //定义模板字符串
+        // 将组件中的属性值引入到组件内部
+        props:['msg','nsp'],
+        // template便是组件内部渲染的模板字符串
+        // Props:便是父组件向组件内部传
+        template: '<h1>Hello World{{msg}}<div>{{nsp}}</div><button v-on:click="toUpper">click me</button></h1>',
+        methods:{
+            toUpper:function () {
+                //想在子组件向父组件发送消息
+                this.$emit('increment','hahaha')
+            }
+        }
+
+    })
+
+    //3/注册组件
+    Vue.component('my-abc',MyAbc)
+    var app = new Vue({
+        el:'#app',
+        data:{
+            inp:''
+        },
+        //为了接受子组件向父组件发送的消息，订阅消息   v-on:increment 写在子组件中
+        methods:{
+            incrementTotal:function(data) {
+                console.log(data)
+                // alert('哈哈哈哈哈哈哈')
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{ msg |toCamel }}
+</div>
+<script src="../vue.js"></script>
+<script>
+
+    Vue.filter('toCamel',function (value) {
+        console.log(value);
+        return 'hahaha'
+    })
+
+    var app = new  Vue({
+        el:'#app',
+        data:{
+            msg:'campkd-a'
+        },
+        // filters: {
+        //     toCamel:function (value) {
+        //         return '123'
+        //     }
+        // }
+    })
+</script>
+</body>
+</html>

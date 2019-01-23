@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--v-on:事件名称 = “回调函数”-->
+<!--作用域：vue对象-->
+<div id="app">
+    <input type="text" v-on:keyup="getInputValue" v-model="msg">
+    <span v-on:click="ClickBtn(msg,$event)">按钮</span>
+    {{msg}}
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new  Vue({
+        el:'#app',
+        data:{
+            msg:''
+        },
+        methods:{
+            getInputValue:function (e) {
+                // 参数是 对象
+                var self = this;
+                var value = e.target.value;
+                self.msg = value +'hahaha'
+            },
+            ClickBtn:function (e,target) {
+                // e参数是传递的数据
+                // 添加,$event
+                // target :事件对象
+                alert(e)
+                console.log(target)
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

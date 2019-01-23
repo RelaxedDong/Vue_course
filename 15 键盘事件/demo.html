@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--全部的按键别名：-->
+
+<!--.enter-->
+<!--.tab-->
+<!--.delete (捕获 "删除" 和 "退格" 键)-->
+<!--.esc-->
+<!--.space-->
+<!--.up-->
+<!--.down-->
+<!--.left-->
+<!--.right-->
+<!--.ctrl-->
+<!--.alt-->
+<!--.shift-->
+<!--.meta-->
+<div id="app">
+    <input v-on:keyup.enter="EnterUp" type="text" v-model="msg">
+    <input v-on:keyup.left="EnterUp" type="text" v-model="msg">
+</div>
+<script src="../vue.js"></script>
+<script>
+    var app = new  Vue({
+        el:'#app',
+        data:{
+            msg:''
+        },
+        methods:{
+            EnterUp:function (e) {
+                // console.log(this.msg)
+                console.log(e)
+            }
+        }
+    })
+</script>
+</body>
+</html>
