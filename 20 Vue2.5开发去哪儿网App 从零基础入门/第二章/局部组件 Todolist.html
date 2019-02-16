@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>局部组件 TodoList</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="inputValue">
+    <button v-on:click="addItem">添加</button>
+    <todo-item v-bind:content="item" v-for="item in list"></todo-item>
+</div>
+<script>
+    var Myconponent = {
+        props:['content'],
+        template:"<li>{{content}}</li>"
+    }
+    var app = new Vue({
+        el:'#app',
+        components:{
+            'todo-item':Myconponent
+        },
+        data:{
+            list:[],
+            inputValue:''
+        },
+        methods:{
+            addItem:function () {
+                this.list.push(this.inputValue)
+                this.inputValue = ''
+            }
+        }
+    })
+</script>
+</body>
+</html>
