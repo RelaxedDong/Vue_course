@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板语法</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{name}}
+    <!--#插值表达式-->
+    <div v-text="name"></div>
+    <!--文本-->
+    <div v-html="name" :title="title"></div>
+    <!--被插入的内容都会被当做 HTML —— 数据绑定会被忽略-->
+
+    <div v-text="age + '岁'"></div>
+
+    <!--#过滤器-->
+    {{ msg | capitalize }}
+
+    <a v-bind:href="url">百度一下</a>
+
+
+    v-bind 缩写
+    <!-- 完整语法 -->
+    <a v-bind:href="url"></a>
+    <!-- 缩写 -->
+    <a :href="url"></a>
+
+
+    v-on 缩写
+    <!-- 完整语法 -->
+    <a v-on:click="doSomething"></a>
+    <!-- 缩写 -->
+    <a @click="doSomething"></a>
+
+
+</div>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            name:'<h1>Dell</h1>',
+            title:'this is a title',
+            age:20,
+            msg:'this is a message',
+            url:'https://www.baidu.com/'
+        },
+        filters: {
+            capitalize: function (value) {
+                if (!value) return ''
+                value = value.toString()
+                return value.charAt(0).toUpperCase() + value.slice(1)
+            }
+        }
+    })
+    console.log(app.$data)
+</script>
+</body>
+</html>

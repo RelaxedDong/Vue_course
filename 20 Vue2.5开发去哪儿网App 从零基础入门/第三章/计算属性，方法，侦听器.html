@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性，方法，侦听器</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--获取fullName-->
+    <!--第一种方式-->
+    <!--{{ fullName }}-->
+
+    <!--第二种方式-->
+    <!--{{getFullName()}}-->
+
+    <!--第三种方式-->
+    {{fullName}}
+
+    {{ age }}
+
+</div>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            firstName:'Dell',
+            lastName:'Lee',
+            age:20,
+            fullName:'Dell Lee'
+        },
+        // #计算属性  缓存机制，如果依赖的值没有发生改变，不会重新执行
+        // computed:{
+        //     fullName:function () {
+        //         console.log('fullName 计算了一次')
+        //         return this.firstName+"   "+this.lastName
+        //     }
+        // },
+        // methods:{
+        //     // 即使依赖的值没有发生改变，也会重新执行
+        //     getFullName:function () {
+        //         console.log('getFullName 计算了一次')
+        //         return this.firstName+"   "+this.lastName
+        //     }
+        // },
+        watch:{
+            // #类似computed
+            firstName:function () {
+                console.log('我执行了firstName')
+                return this.fullName = this.firstName+this.lastName
+            },
+            lastName:function () {
+                return this.fullName = this.firstName+this.lastName
+                console.log('我执行了lastName')
+            },
+        }
+    })
+</script>
+</body>
+</html>
