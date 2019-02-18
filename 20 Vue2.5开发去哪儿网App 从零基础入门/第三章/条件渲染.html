@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染</title>
+    <script src="../../vue.js"></script>
+</head>
+<div id="app">
+
+    <div  v-if="show" data-test="v-if">{{message}}</div>
+    <div  v-else>Bye</div>
+    <!--v-else 元素必须紧跟在 v-if 或 v-show 元素的后面——否则它不能被识别-->
+
+
+    <!--#dom在页面上存在，display: none;-->
+    <div  v-show="show" data-test="v-show">{{message}}</div>
+
+
+    <template>
+        <div v-if="charactor === 'a'">This is A</div>
+        <div v-else-if="charactor==='b'">This is B</div>
+        <div v-else>This is others</div>
+    </template>
+
+    <div v-if="myinput==='email'">
+        邮箱：
+        <input type="text" key="email">
+    </div>
+    <div v-else>
+        用户名：
+        <input type="text" key="username">
+    </div>
+</div>
+<body>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            show:false,
+            message:'hello world',
+            charactor:'a',
+            myinput:'email'
+        }
+    })
+</script>
+</body>
+</html>

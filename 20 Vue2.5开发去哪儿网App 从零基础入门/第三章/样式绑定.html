@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式绑定</title>
+    <script src="../../vue.js"></script>
+    <style>
+        .activated{color: red}
+        .activated1{color: yellow}
+        .myfontSize{font-size: 20px}
+    </style>
+</head>
+<body>
+<div id="app">
+    <div @click="HandleDivClick" :class="{activated:isactivated}">hello world</div>
+
+    <div @click="HandleDivClick1" :class="[activated]">hello world1</div>
+
+    <!--#多个样式-->
+    <div @click="HandleDivClick1" :class="[activated,'myfontSize']">hello world12</div>
+
+    <div :style="styleObj" @click="HandleDivClick2">my style</div>
+
+    <div :style="[styleObj,{cursor:'pointer'}]" @click="HandleDivClick2">my style</div>
+
+</div>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            isactivated:false,
+            activated:'',
+            styleObj:{
+                color:'black',
+                fontSize:'50px'
+            }
+        },
+        methods:{
+            HandleDivClick:function () {
+                this.isactivated = !this.isactivated
+            },
+            HandleDivClick1:function () {
+                this.activated = this.activated==='activated'?'':'activated';
+            },
+            HandleDivClick2:function () {
+                this.styleObj.color = this.styleObj.color==='black'?'red':'black';
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表渲染</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-for="(item,index) in list" :key="item.id">
+        {{item.text}}--{{index}}
+    </div>
+    <button @click="HandleBtnClick">修改dong</button>
+
+
+    <!--<template  v-for="(item,index) in list">-->
+        <!--<div  :key="item.id">-->
+            <!--{{item.text}}&#45;&#45;{{index}}-->
+        <!--</div>-->
+        <!--<span>{{item.text}}</span>-->
+    <!--</template>-->
+
+
+    <!--对象的遍历-->
+    <!--key:键 item:值  index:索引-->
+    <div v-for="(item,key,index) in UserInfo">
+        {{item}}---{{key}}---{{index}}
+    </div>
+    <button @click="ChangInfo">修改Info</button>
+    <button @click="AddInfoPlace">添加地址</button>
+</div>
+<script>
+    //vue数组方法：push pop shift unshift splice sort reverse
+
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            list:[
+                {
+                    id:'asjdflsfsaf',
+                    text:'hello'
+                },
+                {
+                    id:'12316581',
+                    text:'dong'
+                },
+                {
+                    id:'wefdsadf',
+                    text:'nyyyy'
+                },
+            ],
+            UserInfo:{
+                username:"boss dong",
+                age:20,
+                school:'ny'
+            }
+        },
+        methods:{
+            HandleBtnClick:function () {
+                // #修改第二项
+
+                //方法1. splice()
+                // 语法
+                // arrayObject.splice(index,howmany,item1,.....,itemX)
+                // 参数	描述
+                // index	必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。
+                // howmany	必需。要删除的项目数量。如果设置为 0，则不会删除项目。
+                // item1, ..., itemX	可选。向数组添加的新项目。
+                // this.list.splice(1,1,{id:'xlj',text:'new dong'});
+
+                // 方法2.修改引用
+                this.list=[
+                    {
+                        id:'asjdflsfsaf',
+                        text:'hello'
+                    },
+                    {
+                        id:'12316581',
+                        text:'new dong'
+                    },
+                    {
+                        id:'wefdsadf',
+                        text:'nyyyy'
+                    },
+                ]
+
+                // 方法3：
+                Vue.set(this.list,1,{
+                    id:'456789',
+                    text:'changed by Vue.set'
+                })
+            },
+            ChangInfo:function () {
+                //方法1：
+                // this.UserInfo.username = 'new boss';
+                // 方法2：
+                Vue.set(this.UserInfo,'username','new boss');
+            },
+            AddInfoPlace:function () {
+                // 方法1.添加一个plac字段，修改引用
+                // this.UserInfo = {
+                //     username:"boss dong",
+                //     age:20,
+                //     school:'ny',
+                //     place:'重庆'
+                // }
+                //方法2.Vue.set方法
+                Vue.set(this.UserInfo,'place','北京')
+            }
+        }
+    })
+</script>
+</body>
+</html>
