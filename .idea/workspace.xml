@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d750170a-c916-4ab3-bc9e-1c64e895f840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/13 自定义指令/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 事件/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15 键盘事件/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16 translation/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16 translation/升级后.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17 组件/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/过滤器/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18路由/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19 vue.ajax/get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19 vue.ajax/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/is.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/父子间更多传值方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/组件参数校验与非props特性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,40 +24,45 @@
     <session id="-1766820879">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="60" />
-          <entry key="js" value="7" />
+          <entry key="html" value="105" />
+          <entry key="js" value="9" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="60" />
-          <entry key="JavaScript" value="7" />
+          <entry key="HTML" value="105" />
+          <entry key="JavaScript" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="10567" />
-          <entry key="txt" value="81" />
+          <entry key="html" value="17008" />
+          <entry key="txt" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="10567" />
-          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="HTML" value="17008" />
+          <entry key="PLAIN_TEXT" value="118" />
         </counts>
       </usages-collector>
     </session>
@@ -65,10 +70,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/17 组件/demo.html">
+        <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="15" column="22" lean-forward="true" selection-end-line="25" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -96,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01 选择器/选择器.html" />
         <option value="$PROJECT_DIR$/02 数据绑定/数据绑定.html" />
         <option value="$PROJECT_DIR$/03 属性赋值/属性赋值.html" />
         <option value="$PROJECT_DIR$/03 属性赋值/单次插值.html" />
@@ -107,7 +111,6 @@
         <option value="$PROJECT_DIR$/05 数据双绑定/双向绑定.html" />
         <option value="$PROJECT_DIR$/类的三种方式/demo.html" />
         <option value="$PROJECT_DIR$/06 博客/demo.html" />
-        <option value="$PROJECT_DIR$/07 样式绑定/demo.html" />
         <option value="$PROJECT_DIR$/07 样式绑定/淘宝案例.html" />
         <option value="$PROJECT_DIR$/10 v-for/demo.html" />
         <option value="$PROJECT_DIR$/10v-for/demo.html" />
@@ -128,8 +131,34 @@
         <option value="$PROJECT_DIR$/16 translation/demo.html" />
         <option value="$PROJECT_DIR$/16 translation/升级后.html" />
         <option value="$PROJECT_DIR$/17 组件/demo.html" />
+        <option value="$PROJECT_DIR$/18路由/demo.html" />
+        <option value="$PROJECT_DIR$/19 vue.ajax/demo.html" />
+        <option value="$PROJECT_DIR$/19 vue.ajax/get.html" />
+        <option value="$PROJECT_DIR$/19 vue.ajax/post.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/TOdolist.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/局部组件 Todolist.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/TOdolist组件化.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/子组件向父组件传值.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/插值表达式.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/计算属性，方法，侦听器/计算属性，方法，侦听器.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/计算属性，方法，侦听器.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/计算属性setter和getter.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/Vue生命周期函数.html" />
+        <option value="$PROJECT_DIR$/07 样式绑定/demo.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/列表渲染.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/样式绑定.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/条件渲染.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/is.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/父子间更多传值方式.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/组件参数校验与非props特性.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -138,10 +167,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="121" />
-    <option name="y" value="33" />
+    <option name="x" value="126" />
+    <option name="y" value="31" />
     <option name="width" value="1750" />
-    <option name="height" value="1084" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -161,7 +190,18 @@
             <path>
               <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-              <item name="16 translation" type="462c0819:PsiDirectoryNode" />
+              <item name="17 组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
+              <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
+              <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
+              <item name="第四章" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,15 +214,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\vue_lession" />
-      <recent name="E:\vue_lession\10v-for\10-v-for" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\vue_lession\07 样式绑定" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\vue_lession\20 Vue2.5开发去哪儿网App 从零基础入门\第三章" />
+      <recent name="E:\vue_lession" />
+      <recent name="E:\vue_lession\10v-for\10-v-for" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,7 +253,12 @@
       <workItem from="1547448664268" duration="5525000" />
       <workItem from="1547464942668" duration="7077000" />
       <workItem from="1548078226512" duration="3889000" />
-      <workItem from="1548233244934" duration="10829000" />
+      <workItem from="1548233244934" duration="14388000" />
+      <workItem from="1550322280605" duration="6277000" />
+      <workItem from="1550328656762" duration="1258000" />
+      <workItem from="1550410510536" duration="6907000" />
+      <workItem from="1550453633086" duration="9137000" />
+      <workItem from="1550559050500" duration="9239000" />
     </task>
     <task id="LOCAL-00001" summary="Vue选择器">
       <created>1547107574326</created>
@@ -270,17 +316,45 @@
       <option name="project" value="LOCAL" />
       <updated>1548081591713</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="组件，事件，指令">
+      <created>1548249612948</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548249612948</updated>
+    </task>
+    <task id="LOCAL-00010" summary="vue2.5开发去哪儿网，第二章">
+      <created>1550329386323</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550329386323</updated>
+    </task>
+    <task id="LOCAL-00011" summary="vue2.5开发去哪儿网，第三章 上">
+      <created>1550417938915</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550417938915</updated>
+    </task>
+    <task id="LOCAL-00012" summary="vue2.5开发去哪儿网，第三章 下">
+      <created>1550462408163</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550462408163</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38975000" />
+    <option name="totallyTimeSpent" value="75352000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="27" width="1400" height="867" extended-state="0" />
+    <frame x="770" y="39" width="1400" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15762463" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23680352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,7 +374,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15762463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23680352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,20 +408,17 @@
     <MESSAGE value="样式绑定，v-if v-for" />
     <MESSAGE value="支付宝登陆案例" />
     <MESSAGE value="选择框数据绑定" />
-    <option name="LAST_COMMIT_MESSAGE" value="选择框数据绑定" />
+    <MESSAGE value="组件，事件，指令" />
+    <MESSAGE value="vue2.5开发去哪儿网，第二章" />
+    <MESSAGE value="vue2.5开发去哪儿网，第三章 上" />
+    <MESSAGE value="vue2.5开发去哪儿网，第三章 下" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue2.5开发去哪儿网，第三章 下" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Vue_course/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 选择器/选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="18" selection-end-line="57" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -376,13 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="50" column="6" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02 数据绑定/数据绑定.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -418,13 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07 样式绑定/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -470,13 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/13 filter_by/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/13 filter_by/demo.html" />
     <entry file="file://$PROJECT_DIR$/12 选择框/下拉框.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -498,24 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="6610" column="18" selection-start-line="6610" selection-start-column="12" selection-end-line="6610" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/过滤器/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14 事件/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -540,10 +577,172 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/18路由/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19 vue.ajax/demo.html" />
+    <entry file="file://$PROJECT_DIR$/19 vue.ajax/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19 vue.ajax/get.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02 数据绑定/数据绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14 事件/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01 选择器/选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/TOdolist组件化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/Vue生命周期函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/插值表达式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="9" selection-end-line="60" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/计算属性，方法，侦听器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="58" column="7" lean-forward="true" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/计算属性setter和getter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07 样式绑定/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="579" column="40" selection-start-line="579" selection-start-column="34" selection-end-line="579" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/列表渲染.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/条件渲染.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第三章/样式绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/TOdolist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/局部组件 Todolist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/17 组件/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/is.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第二章/子组件向父组件传值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/组件参数校验与非props特性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="14" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/父子间更多传值方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="22" lean-forward="true" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子间更多传值方式</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <counter :count="2" @change="GetToal"></counter>
+    <counter :count="3" @change="GetToal"></counter>
+    <div>{{total}}</div>
+</div>
+<script>
+    var counter = {
+        props:['count'],
+        template:'<div @click="HandleClick">{{number}}</div>',
+        data:function(){
+          return {
+              number:this.count
+          }
+        },
+        methods:{
+            HandleClick:function () {
+                this.number = this.number + 1;
+                this.$emit('change',1)
+            }
+        }
+    }
+
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            total:5
+        },
+        components:{
+            counter:counter
+        },
+        methods:{
+            GetToal:function (number) {
+                this.total += number
+            }
+        }
+    })
+</script>
+</body>
+</html>

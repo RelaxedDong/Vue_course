@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件使用细节点</title>
+    <script src="../../vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <table>
+        <tbody>
+            <tr is="row"></tr>
+            <tr is="row"></tr>
+            <tr is="row"></tr>
+        </tbody>
+    </table>
+    <div @click="HandleClick" ref="hello">获取hello</div>
+
+    <!--#计数器-->
+    <counter @change="GetTotal" ref="one"></counter>
+    <counter  @change="GetTotal" ref="two"></counter>
+    <!--#连个counter求和-->
+    <!--发布订阅模式-->
+
+    <div>总数是：{{total}}</div>
+</div>
+<script>
+    Vue.component('row',{
+        data:function(){
+            return {
+                content:'this is a content'
+            }
+        },
+        template:'<tr><td>{{content}}</td></tr>'
+    });
+
+    // #计数器
+    var counter = Vue.extend({
+        template:'<div><button @click="CounterClick">click me</button>{{number}}</div>',
+        data:function () {
+            return {
+                number:0
+            }
+        },
+        methods:{
+            CounterClick:function () {
+                this.number++;
+                //向父组件传值
+                this.$emit('change')
+            },
+
+        }
+    })
+    Vue.component('counter',counter);
+
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            total:0
+        },
+        methods:{
+            HandleClick:function () {
+                //可根据ref 获取dom节点
+                var hello = this.$refs.hello.innerHTML;
+                alert('获取到的值是:'+hello)
+            },
+            GetTotal:function () {
+                var refs = this.$refs;
+                this.total = refs.one.number + refs.two.number
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件参数校验与非props特性</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+
+<!--props 可以是数组或对象，用于接收来自父组件的数据。props 可以是简单的数组，或者使用对象作为替代，对象允许配置高级选项，如类型检测、自定义校验和设置默认值。-->
+<!--非props特性: 1.当子组件 未接收并且使用 2.会显示在子组件的html属性上-->
+<!--props特性:不会显示在子组件的html属性上-->
+
+<div id="app">
+    <child :content="{id:123,name:'Dell'}" newd="newd"></child>
+</div>
+<script>
+    Vue.component('child',{
+        // props:{
+        //     content:{
+        //         type:[Number,String,Object],
+        //         default:{id:1,name:'dong'},
+        //         required: true,
+        //         // validator: function (value) {
+        //         //     console.log(value)
+        //         //     if(value.name!=='dong'){
+        //         //        alert('姓名错误')
+        //         //     }
+        //         // }
+        //     }
+        // },
+        template:"<div>{{ content }}{{newd}}</div>"
+    })
+    var vm = new Vue({
+        el:"#app"
+    })
+</script>
+</body>
+</html>
