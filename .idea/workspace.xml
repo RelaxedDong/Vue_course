@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d750170a-c916-4ab3-bc9e-1c64e895f840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/18路由/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19 vue.ajax/get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19 vue.ajax/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/is.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/父子间更多传值方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/组件参数校验与非props特性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,39 +36,44 @@
         <counts>
           <entry key="html" value="105" />
           <entry key="js" value="9" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="105" />
           <entry key="JavaScript" value="9" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="17008" />
-          <entry key="txt" value="118" />
+          <entry key="txt" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="17008" />
-          <entry key="PLAIN_TEXT" value="118" />
+          <entry key="PLAIN_TEXT" value="120" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="22" lean-forward="true" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="152">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -167,8 +165,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="126" />
-    <option name="y" value="31" />
+    <option name="x" value="110" />
     <option name="width" value="1750" />
     <option name="height" value="1085" />
   </component>
@@ -186,22 +183,6 @@
             <path>
               <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-              <item name="17 组件" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-              <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-              <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
-              <item name="第四章" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,7 +239,7 @@
       <workItem from="1550328656762" duration="1258000" />
       <workItem from="1550410510536" duration="6907000" />
       <workItem from="1550453633086" duration="9137000" />
-      <workItem from="1550559050500" duration="9239000" />
+      <workItem from="1550559050500" duration="9668000" />
     </task>
     <task id="LOCAL-00001" summary="Vue选择器">
       <created>1547107574326</created>
@@ -344,17 +325,23 @@
       <option name="project" value="LOCAL" />
       <updated>1550462408163</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="vue2.5开发去哪儿网，第四章 上">
+      <created>1550568961627</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550568961627</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75352000" />
+    <option name="totallyTimeSpent" value="75781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="770" y="39" width="1400" height="868" extended-state="0" />
-    <editor active="true" />
+    <frame x="101" y="25" width="1400" height="868" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23680352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23680352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -412,7 +399,8 @@
     <MESSAGE value="vue2.5开发去哪儿网，第二章" />
     <MESSAGE value="vue2.5开发去哪儿网，第三章 上" />
     <MESSAGE value="vue2.5开发去哪儿网，第三章 下" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue2.5开发去哪儿网，第三章 下" />
+    <MESSAGE value="vue2.5开发去哪儿网，第四章 上" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue2.5开发去哪儿网，第四章 上" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Vue_course/README.md">
@@ -741,10 +729,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第四章/给组件绑定原生事件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="true" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
