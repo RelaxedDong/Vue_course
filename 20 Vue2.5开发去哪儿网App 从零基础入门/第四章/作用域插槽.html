@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域插槽</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child>
+        <!--作用域插槽 template-->
+        <template slot-scope="props">
+            <h1>{{props.item}}</h1>
+        </template>
+    </child>
+    <!--dom结构由外部传递-->
+    <!--使用template标签，并且用slot-scope接收-->
+</div>
+<script>
+    Vue.component('child',{
+        data:function(){
+          return {
+              list:[1,2,3,4,5,6]
+          }
+        },
+      // :item="item"子组件向父组件中传递数据
+        template:`<div>
+                    <ul>
+                        <slot v-for="item in list" :item="item">
+                        </slot>
+                    </ul>
+                    </div>`
+    })
+    var vm = new Vue({
+        el:"#app"
+    })
+</script>
+</body>
+</html>

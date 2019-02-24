@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件和v-once指令</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--<child-one v-if="type==='child-one'"></child-one>-->
+    <!--<child-two v-if="type==='child-two'"></child-two>-->
+
+    <component :is="type"></component>
+    <!--耗费性能，重复销毁  创建-->
+    <!--v-once直接放到内存里-->
+    <button @click="handleBtnclick">click me</button>
+</div>
+
+<script>
+    Vue.component('child-one',{
+        template:`<div v-once>this is child one</div>`
+    })
+
+    Vue.component('child-two',{
+        template:`<div v-once>this is child two</div>`
+
+    })
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            type:'child-one'
+        },
+        methods:{
+            handleBtnclick:function () {
+                this.type = this.type==='child-one'?'child-two':'child-one'
+            }
+        }
+    })
+</script>
+</body>
+</html>

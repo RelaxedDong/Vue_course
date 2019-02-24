@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用插槽（slot）</title>
+    <script src="../../vue.js"></script>
+</head>
+<div id="app">
+    <child>
+        <!--插槽-->
+        <p>dell</p>
+        <p>dell</p>
+        <p>dell</p>
+    </child>
+
+    <!--#默认值-->
+    <default></default>
+
+    <!--// #header-footer-->
+    <body-content>
+        <!--具名插槽-->
+        <div class="header" slot="header">header</div>
+        <div class="footer" slot="footer">footer</div>
+    </body-content>
+</div>
+<script>
+    Vue.component('child',{
+        props:['content'],
+        template:`<div>
+                        <p>hello</p>
+                        <slot></slot>
+                   </div>`
+    })
+
+    Vue.component('default',{
+        template:`<div>
+                        <slot>我是默认值</slot>
+                   </div>`
+    })
+
+    // #header-footer
+    // 当不传时，使用默认值
+    Vue.component("body-content",{
+        template:`<div>
+                    <slot name="header"></slot>
+                    <div class="content">content</div>
+                    <slot name="footer"></slot>
+                    <slot name="default-header">
+                        <h1>默认header</h1>
+                    </slot>
+                    </div>`
+    })
+
+    var vm =new Vue({
+        el:"#app"
+    })
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非父子组件传值(Bus/总线/发布订阅模式/观察者模式)</title>
+</head>
+<body>
+<script src="../../vue.js"></script>
+<div id="app">
+    <child content="dong"></child>
+    <child content="hao"></child>
+</div>
+<script>
+    Vue.prototype.bus = new Vue();
+
+    Vue.component('child',{
+        data:function(){
+          return {
+              selfContent:this.content
+          }
+        },
+        props:{
+          content:String,
+        },
+        template:'<div @click="HandleClick">{{selfContent}}</div>',
+        methods:{
+            HandleClick:function () {
+                this.bus.$emit('change',this.selfContent);
+            }
+        },
+        // #组件被挂载时候执行
+        mounted:function () {
+            var this_ = this
+            this.bus.$on('change',function (value) {
+                this_.selfContent = value;
+            });
+        }
+    });
+    var vm = new Vue({
+        el:"#app"
+    })
+</script>
+</body>
+</html>
