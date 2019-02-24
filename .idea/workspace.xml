@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d750170a-c916-4ab3-bc9e-1c64e895f840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/js动画与Velocity-js结合.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/vue中css动画原理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/使用animate-css库.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/同时使用过渡和动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/列表过渡.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/动画封装.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/多个元素或组件的过渡.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/velocity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,7 +39,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="123" />
+          <entry key="html" value="130" />
           <entry key="js" value="11" />
           <entry key="md" value="2" />
         </counts>
@@ -51,22 +47,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="123" />
+          <entry key="HTML" value="130" />
           <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="20390" />
+          <entry key="html" value="21491" />
           <entry key="md" value="18" />
-          <entry key="txt" value="143" />
+          <entry key="txt" value="145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="20390" />
-          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="HTML" value="21491" />
+          <entry key="PLAIN_TEXT" value="163" />
         </counts>
       </usages-collector>
     </session>
@@ -74,19 +70,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/多个元素或组件的过渡.html">
+        <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/动画封装.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="759">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/js动画与Velocity-js结合.html">
+        <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/vue中css动画原理.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="133">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -115,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/10v-for/10-v-for/demo.html" />
-        <option value="$PROJECT_DIR$/09 v-if/demo.html" />
         <option value="$PROJECT_DIR$/vue.js" />
         <option value="$PROJECT_DIR$/10-v-for/demo.html" />
         <option value="$PROJECT_DIR$/11-支付宝登陆案例/demo.html" />
@@ -166,6 +160,8 @@
         <option value="$PROJECT_DIR$/velocity.js" />
         <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/js动画与Velocity-js结合.html" />
         <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/多个元素或组件的过渡.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/列表过渡.html" />
+        <option value="$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/动画封装.html" />
       </list>
     </option>
   </component>
@@ -181,8 +177,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="36" />
+    <option name="x" value="-10" />
     <option name="width" value="1750" />
     <option name="height" value="1062" />
   </component>
@@ -205,12 +200,6 @@
               <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
               <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_lession" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_lession" type="462c0819:PsiDirectoryNode" />
-              <item name="20 Vue2.5开发去哪儿网App 从零基础入门" type="462c0819:PsiDirectoryNode" />
-              <item name="第五章" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,7 +258,7 @@
       <workItem from="1550410510536" duration="6907000" />
       <workItem from="1550453633086" duration="9137000" />
       <workItem from="1550559050500" duration="9935000" />
-      <workItem from="1550984845281" duration="11716000" />
+      <workItem from="1550984845281" duration="15431000" />
     </task>
     <task id="LOCAL-00001" summary="Vue选择器">
       <created>1547107574326</created>
@@ -383,17 +372,23 @@
       <option name="project" value="LOCAL" />
       <updated>1550990696989</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="vue2.5开发去哪儿网，第五章 上">
+      <created>1550996603343</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1550996603343</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87764000" />
+    <option name="totallyTimeSpent" value="91479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="29" width="1400" height="849" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="0" width="1400" height="849" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16935484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18768328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -455,23 +450,10 @@
     <MESSAGE value="init readme" />
     <MESSAGE value="第四章下" />
     <MESSAGE value="vue2.5开发去哪儿网，第四章 下" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue2.5开发去哪儿网，第四章 下" />
+    <MESSAGE value="vue2.5开发去哪儿网，第五章 上" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue2.5开发去哪儿网，第五章 上" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/09 v-if/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="25" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-v-for/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11-支付宝登陆案例/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -750,13 +732,6 @@
     <entry file="file://$PROJECT_DIR$/animate.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/使用animate-css库.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" lean-forward="true" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68457">
@@ -771,20 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/同时使用过渡和动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/vue中css动画原理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="35" selection-start-line="35" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/js动画与Velocity-js结合.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -794,8 +755,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/多个元素或组件的过渡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="285">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/同时使用过渡和动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/列表过渡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/使用animate-css库.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/vue中css动画原理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20 Vue2.5开发去哪儿网App 从零基础入门/第五章/动画封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
