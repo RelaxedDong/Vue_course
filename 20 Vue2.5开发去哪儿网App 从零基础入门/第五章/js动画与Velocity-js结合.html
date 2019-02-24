@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js动画与Velocity-js结合</title>
+    <script src="../../vue.js"></script>
+    <script src="../../velocity.js"></script>
+</head>
+<body>
+<!--动画钩子-->
+<!--显示：-->
+<!--before-enter(el)-->
+<!--enter(el,done)  done为回调函数-->
+<!--after-enter-->
+
+<!--隐藏：-->
+<!--before-leave-->
+<!--after-leave-->
+<!--leave-->
+
+<div id="app">
+    <transition name="fade"
+    @before-enter="handleBeforEnter"
+    @enter="handleEnter"
+    @after-enter="handleafterEnter"
+    >
+        <div v-show="show">hello world</div>
+    </transition>
+    <button @click="handleCLick">click me</button>
+</div>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            show:true,
+        },
+        methods:{
+            handleCLick:function () {
+                this.show = !this.show
+            },
+            handleBeforEnter:function (el) {
+                el.style.opacity = 0;
+            },
+            handleEnter:function (el,done) {
+                Velocity(el,
+                    {opacity:1},
+                    {   duration:1000,
+                        complete:done
+                    })
+            },
+            handleafterEnter:function (el) {
+                console.log('动画结束')
+            }
+        }
+    })
+</script>
+</body>
+</html>

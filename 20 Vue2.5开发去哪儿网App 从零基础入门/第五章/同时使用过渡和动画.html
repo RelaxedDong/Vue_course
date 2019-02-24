@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>同时使用过渡和动画</title>
+    <script src="../../vue.js"></script>
+    <link rel="stylesheet" href="../../animate.css">
+    <style>
+        .fade-enter,.fade-leave-to{
+            opacity: 0;
+        }
+        .fade-leave-active,
+        .fade-enter-active{
+            transition: opacity 3s;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--:duration 自定义时长,-->
+    <!--例如：设置出场入场动画时间-->
+    <!--:duration=“{enter:5000,leave:10000}”-->
+
+    <!--appear  appear-active-class:初次动画-->
+
+    <!--type 确定哪种为时长为准-->
+
+    <transition enter-active-class="animated hinge fade-enter-active"
+                leave-active-class="animated jello fade-leave-active"
+                appear
+                name="fade"
+                type="transition"
+                appear-active-class="animated hinge">
+        <div v-if="show">hello world</div>
+    </transition>
+    <button @click="handleCLick">click me</button>
+</div>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            show:true,
+        },
+        methods:{
+            handleCLick:function () {
+                this.show = !this.show
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用animate-css库</title>
+    <script src="../../vue.js"></script>
+    <link rel="stylesheet" href="../../animate.css">
+</head>
+<body>
+<div id="app">
+    <!--使用animate-css 自定义名字  animated开头-->
+    <transition enter-active-class="animated hinge"
+                leave-active-class="animated jello">
+        <div v-if="show">hello world</div>
+    </transition>
+    <button @click="handleCLick">click me</button>
+</div>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            show:true,
+        },
+        methods:{
+            handleCLick:function () {
+                this.show = !this.show
+            }
+        }
+    })
+</script>
+</body>
+</html>
